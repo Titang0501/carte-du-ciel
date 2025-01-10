@@ -6,8 +6,15 @@
     <title>Carte du Ciel pour Trédarzec</title>
     <style>
         #av-skymap {
-            max-width: 100%;
+            width: 100%;
             height: auto;
+        }
+
+        @media (max-width: 600px) {
+            #av-skymap {
+                width: 100%;
+                height: 300px; /* Ajustez la hauteur pour les petits écrans */
+            }
         }
     </style>
 </head>
