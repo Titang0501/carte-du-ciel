@@ -6,11 +6,13 @@
     <title>Carte du Ciel pour Langoat</title>
     <style>
         /* Redimensionner l'iframe */
-        #skymap-iframe {
-            width: 300px; /* 60% de 500px */
-            height: 354px; /* 60% de 590px */
-            border: none; /* Optionnel : supprimer la bordure */
-        }
+       #skymap-iframe {
+    transform: scale(0.6);
+    transform-origin: 0 0;
+    width: 500px; /* Largeur d'origine */
+    height: 590px; /* Hauteur d'origine */
+    border: none; /* Optionnel : supprimer la bordure */
+}
     </style>
 </head>
 <body>
