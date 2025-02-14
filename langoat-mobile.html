@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carte du Ciel pour Langoat</title>
     <style>
-        /* Conteneur pour l'iframe */
-        #av-skymap {
-            width: 400px; /* 80% de 500px */
-            height: 472px; /* 80% de 590px */
-            overflow: hidden; /* Masquer tout contenu qui dépasse */
+        /* Redimensionner l'iframe à 60% de sa taille d'origine */
+        #skymap-iframe {
+            width: 300px; /* 60% de 500px */
+            height: 354px; /* 60% de 590px */
+            border: none; /* Optionnel : supprimer la bordure */
         }
     </style>
 </head>
@@ -31,17 +31,5 @@
        </script>
        <script src="https://www.astroviewer.net/widgets/widgets/skymap.js"></script>
    </div>
-
-   <script>
-       // Attendre que l'iframe soit chargé
-       window.onload = function() {
-           var iframe = document.getElementById('skymap-iframe');
-           if (iframe) {
-               // Redimensionner l'iframe
-               iframe.style.width = '400px'; // 80% de 500px
-               iframe.style.height = '472px'; // 80% de 590px
-           }
-       };
-   </script>
 </body>
 </html>
