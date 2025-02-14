@@ -11,14 +11,6 @@
             height: 472px; /* 80% de 590px */
             overflow: hidden; /* Masquer tout contenu qui dépasse */
         }
-
-        /* Appliquer un zoom à l'iframe */
-        #skymap-iframe {
-            zoom: 0.8; /* Réduire la taille à 80% */
-            width: 500px; /* Largeur d'origine */
-            height: 590px; /* Hauteur d'origine */
-            border: none; /* Optionnel : supprimer la bordure */
-        }
     </style>
 </head>
 <body>
@@ -39,5 +31,17 @@
        </script>
        <script src="https://www.astroviewer.net/widgets/widgets/skymap.js"></script>
    </div>
+
+   <script>
+       // Attendre que l'iframe soit chargé
+       window.onload = function() {
+           var iframe = document.getElementById('skymap-iframe');
+           if (iframe) {
+               // Redimensionner l'iframe
+               iframe.style.width = '400px'; // 80% de 500px
+               iframe.style.height = '472px'; // 80% de 590px
+           }
+       };
+   </script>
 </body>
 </html>
