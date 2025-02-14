@@ -5,14 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carte du Ciel pour Langoat</title>
     <style>
-        /* Redimensionner l'iframe */
-       #skymap-iframe {
-    transform: scale(0.6);
-    transform-origin: 0 0;
-    width: 500px; /* Largeur d'origine */
-    height: 590px; /* Hauteur d'origine */
-    border: none; /* Optionnel : supprimer la bordure */
-}
+        /* Appliquer la transformation d'échelle à l'iframe */
+        #skymap-iframe {
+            transform: scale(0.8);
+            transform-origin: 0 0;
+            width: 500px; /* Largeur d'origine de l'iframe */
+            height: 590px; /* Hauteur d'origine de l'iframe */
+            border: none; /* Optionnel : supprimer la bordure */
+        }
+
+        /* Ajuster le conteneur pour éviter un espace vide */
+        #av-skymap {
+            width: 400px; /* 500px * 0.8 = 400px */
+            height: 472px; /* 590px * 0.8 = 472px */
+            overflow: hidden; /* Masquer tout contenu qui dépasse */
+        }
     </style>
 </head>
 <body>
